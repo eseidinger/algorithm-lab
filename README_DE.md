@@ -1,4 +1,4 @@
-# Algorithmen
+# Algorithm Lab
 
 Ich habe dieses Repository erstellt, um nicht den Spaß am Programmieren zu verlieren. Ich benutze in letzter Zeit
 sehr viel KI, um Projekte zu realisieren. Dabei fühle ich mich oft nur als Zuschauer, als Reviewer, der viel zu oft

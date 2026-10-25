@@ -1,4 +1,4 @@
-# Algorithms
+# Algorithm Lab
 
 I created this repository so I wouldn't lose the joy of programming. Lately I have been using AI a lot to realize
 projects. In doing so, I often feel like a mere spectator, a reviewer who has to ask far too often how something works.
