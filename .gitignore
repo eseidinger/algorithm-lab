@@ -1,0 +1,22 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Frontend
+node_modules/
+dist/
+
+# Gradle
+.gradle/
+.kotlin/
+build/
+
+# Local configuration
+.env
+.env.*
+!.env.example
