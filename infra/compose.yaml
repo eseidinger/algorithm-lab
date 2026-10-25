@@ -1,0 +1,22 @@
+name: algorithm-lab
+
+services:
+  postgres:
+    image: postgres:18
+    environment:
+      POSTGRES_DB: algorithm_lab
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres_local
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql
+      - ./postgres:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d algorithm_lab"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  postgres-data:
