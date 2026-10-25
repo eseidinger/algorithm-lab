@@ -4,7 +4,6 @@ Erweiterte und korrigierte Fassung mit 19 Basis-Showcases und 11 Bioinformatikmo
 
 - **Stand des fachlichen Plans:** 24. Oktober 2026
 - **Markdown-Fassung mit Techstack-Empfehlungen:** 25. Oktober 2026
-- **Quelle:** [Erweiterter und korrigierter Projektplan auf Google Drive](https://drive.google.com/file/d/1nd1GXcaDKJ_xS_QY5IWSJLpKVumMhTej/view?usp=drivesdk)
 
 Die Abschnitte 1–9 übernehmen den vollständigen fachlichen Projektplan. Abschnitt 10 konkretisiert den Techstack anhand der ergänzenden Empfehlungen.
 
@@ -16,7 +15,7 @@ Eine gemeinsame Anwendung verbindet:
 - Compeau/Pevzner: algorithmische Konzepte auf biologische Fragestellungen übertragen.
 - Just Use Postgres! und DDIA: Datenmodelle, Transaktionen, Indizes, Hintergrundverarbeitung und abgeleitete Daten untersuchen.
 
-Alle bisherigen Showcases bleiben erhalten. Bioinformatik ergänzt bestehende Ansichten oder erhält eigenständige Module. Der Katalog lässt sich nach Algorithmusfamilie und Anwendungsgebiet durchsuchen. Jeder Showcase funktioniert unabhängig; gemeinsame Datensätze und Darstellungen können wiederverwendet werden. Grundlage der Bioinformatikmodule sind die elf Kapitelzusammenfassungen in Google Drive. Geplant sind zentrale Verfahren und ausgewählte Vertiefungen, keine vollständige Implementierung sämtlicher Buchaufgaben.
+Alle bisherigen Showcases bleiben erhalten. Bioinformatik ergänzt bestehende Ansichten oder erhält eigenständige Module. Der Katalog lässt sich nach Algorithmusfamilie und Anwendungsgebiet durchsuchen. Jeder Showcase funktioniert unabhängig; gemeinsame Datensätze und Darstellungen können wiederverwendet werden. Grundlage der Bioinformatikmodule sind die elf Kapitelzusammenfassungen. Geplant sind zentrale Verfahren und ausgewählte Vertiefungen, keine vollständige Implementierung sämtlicher Buchaufgaben.
 
 ## 2. Architektur
 
