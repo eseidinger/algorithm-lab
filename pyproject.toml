@@ -1,0 +1,22 @@
+[project]
+name = "algorithm-lab-workspace"
+version = "0.1.0"
+requires-python = ">=3.13,<3.14"
+dependencies = []
+
+[tool.uv]
+package = false
+
+[tool.uv.workspace]
+members = [
+    "packages/algorithms",
+    "apps/algorithm-service",
+]
+
+[dependency-groups]
+dev = [
+    "hypothesis>=6.170.9",
+    "mypy>=2.4.0",
+    "pytest>=9.1.1",
+    "ruff>=0.17.2",
+]
