@@ -62,3 +62,7 @@ The main inspiration for this repository comes from four books I have read over 
 The first two books gave me yet another way into algorithms. The last two showed me that a standard solution like
 PostgreSQL can cover a great many use cases, in which cases it is better to turn to other databases and storage
 technologies, and what to keep in mind when using them.
+
+## Local Development
+
+See [Local Development, Builds, and Database Migrations](docs/development.md) for setup, configuration, checks, and database lifecycle commands.

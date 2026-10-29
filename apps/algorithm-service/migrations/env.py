@@ -1,9 +1,6 @@
 from logging.config import fileConfig
 
-from sqlalchemy import engine_from_config
-
 from alembic import context
-
 from algorithm_service.config import Settings
 from algorithm_service.database import create_database_engine
 

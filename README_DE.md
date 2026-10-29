@@ -68,3 +68,7 @@ Die maßgebliche Inspiration für dieses Repository kommt von vier Büchern, die
 Die ersten beiden Bücher haben mir noch einmal einen anderen Zugang zu Algorithmen gegeben. Die letzten beiden haben mir
 gezeigt, dass man mit einer Standardlösung wie PostgreSQL sehr viele Anwendungsfälle abdecken kann, in welchen Fällen man
 besser auf andere Datenbanken und Speichertechnologien zurückgreifen sollte und was bei deren Einsatz zu beachten ist.
+
+## Lokale Entwicklung
+
+Die englische Anleitung [Local Development, Builds, and Database Migrations](docs/development.md) beschreibt Einrichtung, Konfiguration, Prüfungen und Datenbankmigrationen.
