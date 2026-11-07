@@ -7,10 +7,10 @@ export default defineConfig({
   server: {
     proxy: {
       '/api/data': {
-        target: 'http://127.0.0.1:8080',
+        target: process.env.DATA_PROXY_TARGET ?? 'http://127.0.0.1:8080',
       },
       '/api/algorithms': {
-        target: 'http://127.0.0.1:8000',
+        target: process.env.ALGORITHMS_PROXY_TARGET ?? 'http://127.0.0.1:8000',
       },
     },
   },

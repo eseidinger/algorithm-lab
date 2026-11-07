@@ -238,6 +238,24 @@ npm --prefix apps/web run preview
 
 The preview server is for local verification. Deployment will serve the static build through a web server.
 
+### Browser end-to-end tests
+
+Install Chromium once after installing the frontend dependencies:
+
+```bash
+npx --prefix apps/web playwright install chromium
+```
+
+Run the isolated browser tests from the repository root:
+
+```bash
+npm --prefix apps/web run test:e2e
+```
+
+Docker, uv, Node.js, and JDK 25 are required. The runner creates a disposable PostgreSQL container with its own data, applies Alembic, and starts Spring, FastAPI, and Vite on separate dynamically selected localhost ports. Flyway initializes the catalog when Spring starts. The browser creates a job with the worker stopped, checks it survives a reload, starts the worker, and verifies the result and another reload. A second test checks the unknown-execution error. The runner stops its processes and temporary container afterward; it does not use the development Compose volume. A port can still be claimed by another process between selection and service startup, in which case rerun the test.
+
+Chromium traces and screenshots for failures are saved in `apps/web/test-results/`. The suite runs sequentially because it controls the worker process. Additional Playwright arguments can be passed after `--`, for example `npm --prefix apps/web run test:e2e -- --headed`.
+
 ### Python
 
 ```bash

@@ -119,7 +119,7 @@ sequenceDiagram
 
 The worker should use the stored input snapshot and should not fetch it again from Spring. Timing includes validation and calculation and excludes database operations. The function returns `idle`, `succeeded`, `failed`, or `discarded`; these outcomes are not extra persisted statuses. Lease renewal and checkpoints remain unimplemented; a result whose lease expired is discarded. No result transition is implied merely by having reserved the job.
 
-**Evidence:** [Worker unit tests](../../apps/algorithm-service/tests/test_worker.py) cover dispatch, validation, error boundaries, and discarded completions. [Worker integration tests](../../apps/algorithm-service/tests/test_worker_integration.py) verify successful computation, stored failure, and lease-expiry discard followed by retry recovery against temporary PostgreSQL. [Worker process tests](../../apps/algorithm-service/tests/test_worker_process.py) cover the installed CLI against PostgreSQL and both shutdown signals. A browser journey is not tested yet.
+**Evidence:** [Worker unit tests](../../apps/algorithm-service/tests/test_worker.py) cover dispatch, validation, error boundaries, and discarded completions. [Worker integration tests](../../apps/algorithm-service/tests/test_worker_integration.py) verify successful computation, stored failure, and lease-expiry discard followed by retry recovery against temporary PostgreSQL. [Worker process tests](../../apps/algorithm-service/tests/test_worker_process.py) cover the installed CLI against PostgreSQL and both shutdown signals. The [browser end-to-end test](../../apps/web/e2e/fibonacci.e2e.ts) verifies a queued job through its result and reload.
 
 ## W5. Reject a Late Result from an Obsolete Attempt
 
