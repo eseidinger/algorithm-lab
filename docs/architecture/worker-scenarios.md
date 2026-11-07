@@ -253,6 +253,6 @@ Jobs created while the worker is stopped remain queued. On startup the CLI drain
 
 **Evidence:** [Loop tests](../../apps/algorithm-service/tests/test_worker_loop.py) exercise stop-before-start, processing multiple outcomes, database-error recovery, interruptible idle/error waits, and stop-after-current-job. [CLI tests](../../apps/algorithm-service/tests/test_worker_cli.py) verify signal handling and cleanup on normal return, loop exceptions, and partial signal setup failure. [Process tests](../../apps/algorithm-service/tests/test_worker_process.py) execute the installed command against temporary PostgreSQL, process jobs submitted before and after startup, and exit cleanly on SIGINT/SIGTERM.
 
-## Planned Browser Acceptance Scenario
+## Browser Acceptance Scenario
 
-Once the frontend is connected to the implemented backends and worker, the acceptance journey is: select a scenario, POST an execution, poll its saved URL until `succeeded`, display 55, then reload the URL and obtain the same stored result. Also submit while the worker is stopped and verify that starting it later processes the durable job. These are acceptance scenarios from the [first slice plan](../Algorithm_Lab_First_Vertical_Slice_Plan.md), not currently available browser behavior.
+The acceptance journey selects a scenario, starts an execution, polls its saved URL until `succeeded`, displays 55, and reloads the URL to retrieve the stored result. It also verifies that a job submitted while the worker is stopped is processed after the worker starts. The local run is recorded in the [first-slice acceptance report](../first-vertical-slice-acceptance.md).

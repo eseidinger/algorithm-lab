@@ -99,6 +99,6 @@ Local Vite proxying already provides same-origin relative API requests. The plan
 | Frontend | Vitest, React Testing Library, jsdom: accessible shell, catalog and scenario states, navigation and direct routes, response validation, execution creation and pending-button behavior, no automatic POST retries, persistent execution routes, controlled-timer status polling and stopping, GET-only error recovery, HTTP/network failures, and abort propagation |
 | Static checks | Ruff and mypy; ktlint; ESLint and TypeScript; Prettier for the frontend |
 
-Python API integration tests use real temporary PostgreSQL with simulated Spring HTTP responses. Spring tests use their own PostgreSQL container. These checks do not constitute a deployed end-to-end test of both real backends and the browser. The final slice still needs that acceptance journey.
+Python API integration tests use real temporary PostgreSQL with simulated Spring HTTP responses. Spring tests use their own PostgreSQL container. The real backends and browser were also checked together locally; see the [first-slice acceptance report](../first-vertical-slice-acceptance.md). This is not a deployed end-to-end test.
 
 See [HTTP scenarios](request-scenarios.md) for request flows and [reservation and worker scenarios](worker-scenarios.md) for concurrency and recovery.

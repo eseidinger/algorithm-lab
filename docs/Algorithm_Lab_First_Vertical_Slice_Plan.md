@@ -58,3 +58,5 @@ The outbox foundation from Phase 0 of the main project plan is the next infrastr
 ## Completion
 
 The slice is complete when all acceptance criteria pass and the browser workflow can be demonstrated from a fresh local startup. It establishes the integration path for subsequent showcases.
+
+The local acceptance performed on 2026-11-07, including its scope and startup details, is recorded in the [acceptance report](first-vertical-slice-acceptance.md).
